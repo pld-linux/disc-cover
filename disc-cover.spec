@@ -3,7 +3,7 @@ Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
 Version:	1.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://home.wanadoo.nl/jano/files/%{name}-%{version}.tar.gz
@@ -40,9 +40,10 @@ wpisuj±c ¿adnych informacji.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}/templates}
 
 install disc-cover $RPM_BUILD_ROOT%{_bindir}
+install templates/* $RPM_BUILD_ROOT%{_datadir}/%{name}/templates
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,3 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS CHANGELOG TODO README
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/%{name}
