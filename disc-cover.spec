@@ -12,6 +12,8 @@ Requires:	tetex-dvips
 Requires:	tetex-latex
 Requires:	ImageMagick
 BuildRequires:	perl >= 5.6
+BuildRequires:	perl-Audio-CD
+BuildRequires:	perl-modules
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,6 +35,9 @@ wpisuj±c ¿adnych informacji.
 %prep
 %setup -q
 
+%build
+./disc-cover -H > README
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
@@ -44,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CHANGELOG TODO
+%doc AUTHORS CHANGELOG TODO README
 %attr(755,root,root) %{_bindir}/*
