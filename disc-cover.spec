@@ -3,7 +3,7 @@ Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
 Version:	1.5.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://www.cwi.nl/~jvhemert/files/%{name}-%{version}.tar.gz
@@ -13,9 +13,8 @@ Requires:	tetex-dvips
 Requires:	tetex-format-latex
 Requires:	ImageMagick
 Requires:	perl-Audio-CD
-BuildRequires:	perl >= 5.6
-BuildRequires:	perl-modules
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl-devel >= 1:5.6
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
