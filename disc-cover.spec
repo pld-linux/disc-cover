@@ -2,7 +2,7 @@
 Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
-Version:	1.4.0
+Version:	1.5.0
 Release:	1
 License:	GPL
 Group:		Applications
