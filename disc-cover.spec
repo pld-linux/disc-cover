@@ -2,12 +2,12 @@
 Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
-Version:	1.5.0
-Release:	2
+Version:	1.5.2
+Release:	1
 License:	GPL
 Group:		Applications
+# Source0-md5:	a7b6a95efa46e8eacde536be16eaa253
 Source0:	http://home.wanadoo.nl/jano/files/%{name}-%{version}.tar.gz
-# Source0-md5:	6e1797474e98b401f68e7c3c5f5cfb0c
 URL:		http://home.wanadoo.nl/jano/disc-cover.html
 Requires:	tetex-dvips
 Requires:	tetex-latex
