@@ -12,8 +12,8 @@ URL:		http://homepages.cwi.nl/~jvhemert/disc-cover.html
 Requires:	tetex-dvips
 Requires:	tetex-format-latex
 Requires:	ImageMagick
+Requires:	perl-Audio-CD
 BuildRequires:	perl >= 5.6
-BuildRequires:	perl-Audio-CD
 BuildRequires:	perl-modules
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
