@@ -2,12 +2,12 @@
 Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
-Version:	1.3.2
+Version:	1.4.0
 Release:	1
 License:	GPL
 Group:		Applications
-Source0:	http://www.liacs.nl/~jvhemert/disc-cover/download/unstable/%{name}-%{version}.tar.bz2
-URL:		http://www.liacs.nl/~jvhemert/disc-cover/
+Source0:	http://home.wanadoo.nl/jano/files/%{name}-%{version}.tar.gz
+URL:		http://home.wanadoo.nl/jano/disc-cover.html
 Requires:	tetex-dvips
 Requires:	tetex-latex
 Requires:	ImageMagick
@@ -33,9 +33,6 @@ wpisuj±c ¿adnych informacji.
 %prep
 %setup -q
 
-%build
-find docs -name INSTALL -exec rm \{\} \;
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
@@ -48,8 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS CHANGELOG TODO
-%doc docs/english
-%doc %lang(de) docs/german
-%doc %lang(nl) docs/dutch
-%doc %lang(es) docs/spanish
 %attr(755,root,root) %{_bindir}/*
