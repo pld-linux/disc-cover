@@ -10,7 +10,7 @@ Group:		Applications
 Source0:	http://home.wanadoo.nl/jano/files/%{name}-%{version}.tar.gz
 URL:		http://home.wanadoo.nl/jano/disc-cover.html
 Requires:	tetex-dvips
-Requires:	tetex-latex
+Requires:	tetex-format-latex
 Requires:	ImageMagick
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Audio-CD
