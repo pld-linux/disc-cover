@@ -8,6 +8,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://www.cwi.nl/~jvhemert/files/%{name}-%{version}.tar.gz
 # Source0-md5:	f730117f926e907b841a57395e55718e
+Patch0:		%{name}-typo.patch
 URL:		http://homepages.cwi.nl/~jvhemert/disc-cover.html
 Requires:	tetex-dvips
 Requires:	tetex-format-latex
@@ -35,6 +36,7 @@ wpisuj±c ¿adnych informacji.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 ./disc-cover -H > README
