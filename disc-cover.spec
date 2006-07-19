@@ -2,13 +2,13 @@
 Summary:	Cover generator
 Summary(pl):	Generator ok³adek
 Name:		disc-cover
-Version:	1.5.4
-Release:	2
+Version:	1.5.6
+Release:	1
 License:	GPL
 Group:		Applications
-Source0:	http://www.cwi.nl/~jvhemert/files/%{name}-%{version}.tar.gz
-# Source0-md5:	a7614dfaadf960f349c970ab8a3bed43
-URL:		http://homepages.cwi.nl/~jvhemert/disc-cover.html
+Source0:	http://www.vanhemert.co.uk/files/%{name}-%{version}.tar.gz
+# Source0-md5:	4d8cf0e644a9b311f7e6ed44944b9033
+URL:		http://www.vanhemert.co.uk/disc-cover.html
 Requires:	tetex-dvips
 Requires:	tetex-format-latex
 Requires:	ImageMagick
