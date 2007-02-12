@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Cover generator
-Summary(pl):	Generator ok³adek
+Summary(pl.UTF-8):   Generator okÅ‚adek
 Name:		disc-cover
 Version:	1.5.6
 Release:	1
@@ -25,12 +25,12 @@ a back and front cover for the cd. The cover is output is in Latex,
 Dvi, Pdf or Postscript. This little gadget lets you produce covers
 without typing in all the information yourself.
 
-%description -l pl
-disc-cover udostêpnia ³atwy sposób produkcji ok³adek na p³yty z
-muzyk±. Skanuje p³ytê i u¿ywa informacji z bazy danych freedb, by
-z³o¿yæ przedni± i tyln± ok³adkê. Formaty wyj¶ciowe to latex, dvi, pdf,
-postscript. Dziêki temu ma³emu gad¿etowi mo¿esz robiæ ok³adki nie
-wpisuj±c ¿adnych informacji.
+%description -l pl.UTF-8
+disc-cover udostÄ™pnia Å‚atwy sposÃ³b produkcji okÅ‚adek na pÅ‚yty z
+muzykÄ…. Skanuje pÅ‚ytÄ™ i uÅ¼ywa informacji z bazy danych freedb, by
+zÅ‚oÅ¼yÄ‡ przedniÄ… i tylnÄ… okÅ‚adkÄ™. Formaty wyjÅ›ciowe to latex, dvi, pdf,
+postscript. DziÄ™ki temu maÅ‚emu gadÅ¼etowi moÅ¼esz robiÄ‡ okÅ‚adki nie
+wpisujÄ…c Å¼adnych informacji.
 
 %prep
 %setup -q
