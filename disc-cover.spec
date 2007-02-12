@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Cover generator
-Summary(pl.UTF-8):   Generator okładek
+Summary(pl.UTF-8):	Generator okładek
 Name:		disc-cover
 Version:	1.5.6
 Release:	1
